@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header{
+  background-image: url(../img/header_desktop.png);
+  height: 420px;
+}
+.bar{
+  background: #000;
+  height: 55px;
+}
+.bar .logo a{
+  float: left;
+  background-image: url(../img/logo_w.svg);
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 120px;
+  height: 30px;
+  margin: 15px 2em;
+}
+.bar ul{
+  float: right;
+  margin-right: 2em;
+}
+.bar ul li{
+  float: left;
+}
+.bar ul li a{
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+.bar ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+.clearfix{
+	clear: both;
+}
+.header p{
+  text-align: center;
+  color: white;
+  background: hsla(240, 0%, 50%, 0.4);
+  padding: 1em;
+  line-height: 1.2;
+}
+.header span{
+  font-size: 35px;
+}
+.header .ad{
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.footer{
+	width: 100%;
+	height: 240px;
+	background-color: #efe9e7;
+	color: #3d1101;
+}
+.footer > div{
+	float: left;
+	padding: 40px 3% 20px 3%;
+}
+.footer p{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.footer .about{
+	width: 29%;
+}
+.footer .contact{
+	width: 24%;
+}
+.footer .contact li{
+  list-style-type: disc;
+  margin-left: 20px;
+} 
+.footer .website{
+	width: 29%;
+}
+.website div{
+	float: right;
+	padding-bottom: 15px;
+}
+.footer .website ul{
+	float: right;
+}
+.footer .website ul li{
+  float: left;
+  padding: 5px;
+}
+.footer .website ul li img{
+  width: 30px;
+}
+@media(max-width: 768px){
+	.footer .website img{
+		width: 100%;
+	}
+}
+@media(max-width: 667px){
+	.bar{
+		height: 68px;
+	}
+	.bar .logo{
+		padding: 5px 2em;
+		margin: 0 auto;
+	}
+	.bar .logo a{
+		float: none;margin: 0 auto;
+	}
+	.bar ul{
+  		float: none;
+  		width: 100%;
+  		margin-right: 0;
+	}
+	.bar ul li{
+		width: 33.33333%;
+  		text-align: center;
+	}
+	.bar ul li a{
+		padding: 5px;
+	}
+	.footer .about, .footer .contact, .footer .website{
+		float: none;
+		width: 90%;
+		background-color: #efe9e7;
+		padding: 40px 5% 20px 5%;
+	}
+	.footer .website div, .footer .website ul{
+		float: none;
+	}
+	.footer .website img{
+		width: auto;
+	}
+}
+@media(max-width: 414px){
+	.header{
+		background-image: url(../img/header_mobile.png);
+	}
+}

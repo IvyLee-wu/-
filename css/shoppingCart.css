@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.content{
+	background-color: #efe9e7;
+	color: #3d1101;
+	padding: 4%;
+}
+.content .list{
+	float: left;
+	margin-right: 2%;
+	width: 16%;
+}
+.content .shopping{
+	float: left;
+	width: 82%;
+}
+.content .list p{
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+.content .list p span{
+	font-size: 18px;
+	padding-left: 10px;
+}
+.content .list li{
+	padding: 7px 10px;
+	border-bottom: 1px solid #3d1101;
+}
+.content .list li:hover{
+	background-color: #3d1101;
+	color: #efe9e7;
+	cursor: pointer;
+}
+.content .shopping .topdiv ul{
+	float: right;
+}
+.content .shopping .topdiv li{
+	float: left;
+	padding: 0 10px;
+}
+.content .shopping .topdiv .pay{
+	border-right: 1.5px solid #3d1101;
+}
+.content .shopping .topdiv .cart a{
+	font-size: 20px;
+	text-decoration: none;
+	color: #3d1101;
+}
+.content .shopping .topdiv input{
+	width: 60%;
+	padding: 5px;
+	border: 2px solid #3d1101;
+	background-color: #efe9e7;
+	margin-left: 30px;
+}
+.content .shopping .topdiv input:focus{
+	outline: none;
+}
+.content .shopping .topdiv button{
+	padding: 5px 8px;
+	background-color: #3d1101;
+	color: #efe9e7;
+	cursor: pointer;
+	border: 2px solid #3d1101;
+}
+.content .shopping .topdiv{
+	margin-bottom: 30px;
+}
+.content .shopping .meal{
+}
+.content .shopping .meal li{
+	float: left;
+	width: 30.33333%;
+	margin: 0 1.5% 30px 1.5%;
+	box-shadow: 1px 1px 5px #888888;
+	position: relative;
+}
+.content .shopping .meal li img{
+	width: 100%;
+	padding-bottom: 15px;
+}
+.content .shopping .meal li p{
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+.content .shopping .meal li p span{
+	font-size: 15px;
+	font-weight: normal;
+}
+.content .shopping .meal li p a{
+	text-decoration: none;
+	color: #3d1101;
+}
+.content .shopping .meal li .price{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	border-top: 1px solid #3d1101;
+	font-weight: bold;
+}
+.content .shopping .meal li .addToCart{
+	border: 2px solid #f56c23;
+	margin: 0 10px 10px 10px;
+	border-radius: 3px;
+}
+.content .shopping .meal li .addToCart a{
+	color: #f56c23;
+	text-decoration: none;
+	padding: 5px 0;
+	display: block;
+	text-align: center;
+}
+.content .shopping .meal li .unfavorite{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	font-size: 20px;
+	color: white;
+}
+/*.content .shopping .meal li .favorite{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	font-size: 20px;
+	color: white;
+}*/
+@media(max-width: 768px){
+	.content .shopping .meal li{
+		width: 47%;
+	}
+}
+@media(max-width: 667px){
+	.content .shopping ,.content .list{
+		float: none;
+	}
+	.content .list{
+		width: 200px;
+		margin: 10px auto 30px auto;
+	}
+	.content .shopping{
+		width: 100%;
+	}
+	.content .shopping .topdiv input{
+		margin-left: 10px;
+	}
+}
+@media(max-width: 500px){
+	.content .shopping .meal li{
+		width: 80%;
+		margin: 0 10% 30px 10%;
+	}
+	.content .shopping .topdiv ul{
+		width: 40%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.content .shopping .topdiv input{
+		margin-left: 50px;
+	}
+}
+@media(max-width: 320px){
+	.content .shopping .topdiv ul{
+		width: 42%;
+	}
+	.content .shopping .topdiv input{
+		margin-left: 40px;
+	}
+}
+
+.ribbon{
+  width: 125px;
+  height: 125px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  /* 在右上角加一個div,長寬125px,.ribbon-green超出.ribbon
+  就不顯示,位置絕對定位,右上皆-3 */
+}
+.ribbon-green{
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  padding: 7px 0;
+  left: 3px;
+  top: 28px;
+  width: 157px;
+  background-color: #3acba1;
+  transform: rotate(45deg);
+  /*-webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);*/
+
+  /* 文字置中,白色,padding上下推7左右0,.ribbon-green在.ribbon中
+  往左推3往上推28,.ribbon-green寬度為157,背景3acba1,
+  .ribbon-green轉45度 */
+}
+.ribbon-green::before, .ribbon-green::after {
+  content: "";
+  border-top: 3px solid #6e8900;   
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  position:absolute;
+  bottom: -6px;
+  /* 偽元素必寫content,
+  設上下左右皆為3的邊框,會形成一個寬高為6的正方形,裡面被一個X切成
+  4個三角形,transparent把左右下變成透明,只顯示border-top的三角形,
+  最後再把這個寬高為6的正方形下移到-6
+  p.s.border左右下不能設顏色,否則transparent後連border-top也會消失 */
+}
+.ribbon-green:before {
+  left: 0;
+  /* before位置置左 */
+}
+.ribbon-green:after {
+  right: 0;
+  /* after位置置右 */
+}
